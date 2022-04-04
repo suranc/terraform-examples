@@ -14,6 +14,8 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
+data "aws_region" "current" {}
+
 resource "aws_instance" "chris_ec2" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t3.micro"
@@ -31,7 +33,7 @@ resource "aws_key_pair" "terraform_example_ec2_key" {
 }
 
 output "region" {
-  value = "${var.region}"
+  value = data.aws_region.current.name
 }
 
 output "instanceTags" {
