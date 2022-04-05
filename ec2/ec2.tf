@@ -42,5 +42,5 @@ output "instanceTags" {
 }
 
 output "public_ip" {
-  value = aws_instance.chris_ec2.public_ip[*]
+  value = aws_instance.chris_ec2[*].public_ip
 }
