@@ -38,7 +38,8 @@ output "region" {
 }
 
 output "instanceTags" {
-  value = aws_instance.chris_ec2[*].tags.Name
+  #value = aws_instance.chris_ec2[*].tags.Name
+  value = aws_instance.chris_ec2[0].tags
 }
 
 output "public_ip" {
