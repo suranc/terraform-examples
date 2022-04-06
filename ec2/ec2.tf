@@ -39,7 +39,6 @@ output "region" {
 
 output "instanceTags" {
   value = aws_instance.chris_ec2[0].tags
-  #value = "Name;${aws_instance.chris_ec2[0].tags.Name},Name;${aws_instance.chris_ec2[1].tags.Name}"
 }
 
 output "public_ip" {
