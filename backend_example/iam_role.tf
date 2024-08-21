@@ -19,5 +19,6 @@ resource "aws_iam_role" "suran_tf_role" {
 
   tags = {
     owner = "suran"
+    managed-by = "default:ASG:IAM_Role_CS"
   }
 }
