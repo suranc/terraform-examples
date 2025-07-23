@@ -1,4 +1,4 @@
 module "projectlevelnull" {
-  source  = "app.harness.io/TEyxLP87RquOEph_GrbYvQ/projectlevelnull/nullexample"
+  source  = "app.harness.io/TEyxLP87RquOEph_GrbYvQ/projectlevelnullprivate/nullexample"
   version = "v1.0.0"
 }
